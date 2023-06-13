@@ -9,7 +9,7 @@ import {
   ThemeIconContainer,
   Title,
 } from "./AppStyles";
-import { LogoImage } from "../assets";
+import { LogoImage, HiGif } from "../assets";
 import data from "../data.json";
 import { Tiles } from "../tiles";
 import { ThemeContext } from "../ThemeContext";
@@ -41,7 +41,7 @@ export const App = () => {
         <Header>
           <TitleContainer>
             <LogoContainer src={LogoImage} alt="Logo image" />
-            <Title onClick={handleTitleClick}>Tejas Kothari</Title>
+            <Title onClick={handleTitleClick}>Aswin Shailajan <img src={HiGif} alt="Hai..!" width="30px" /></Title>
           </TitleContainer>
           <ThemeIconContainer onClick={() => setIsDarkMode(!isDarkMode)}>
             {isDarkMode ? <Moon color="#D3D3D3" /> : <Sun color="#E8A317" />}

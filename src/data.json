@@ -1,29 +1,29 @@
 {
   "tiles": [
     {
-      "tileName": "Welcome!",
-      "content": "Namaste",
+      "tileName": "Welcome to...",
+      "content": "...my portfolio!",
       "isSquare": true,
       "color": "#603F83FF",
       "flipped": true
     },
     {
       "tileName": "Click me!",
-      "content": "Click on Tejas twice!",
+      "content": "Click title twice!",
       "isSquare": false,
       "color": "#C7D3D4FF",
       "flipped": true
     },
     {
       "tileName": "Who am I?",
-      "content": "Software Enginner coding for passion & engineering",
+      "content": "Final year computer enthusiast",
       "isSquare": true,
       "color": "#00539CFF",
       "flipped": true
     },
     {
       "tileName": "Skills",
-      "content": "Python, Java, [Vertica, MySQL](SQL), MongoDB, Spring boot, Pytest",
+      "content": "C++, React, Firebase, Python, Java, [Postgress, MySQL](SQL)",
       "isSquare": false,
       "color": "#EEA47FFF",
       "flipped": true
@@ -32,8 +32,8 @@
       "tileName": "My Github",
       "content": {
         "type": "iconLink",
-        "url": "https://github.com/tejas-k3",
-        "iconSrc": "https://pic.onlinewebfonts.com/svg/img_258190.png",
+        "url": "https://github.com/aswin2108",
+        "iconSrc": "https://icons.veryicon.com/png/System/Flatwoken/Apps%20github.png",
         "iconAlt": "Icon"
       },
       "isSquare": false,
@@ -44,8 +44,8 @@
       "tileName": "Located at",
       "content": {
         "type": "iconLink",
-        "url": "https://goo.gl/maps/Nxo6C9UbddUbrQ616",
-        "iconSrc": "https://cdn.onlinewebfonts.com/svg/img_466606.png",
+        "url": "https://goo.gl/maps/1rjWiz8wx5kouU4n7",
+        "iconSrc": "https://icons.veryicon.com/png/System/Flatwoken/Apps%20google%20maps.png",
         "iconAlt": "Icon"
       },
       "isSquare": false,
@@ -63,7 +63,7 @@
       "tileName": "LinkedIn",
       "content": {
         "type": "iconLink",
-        "url": "https://www.linkedin.com/in/tejaskothari03/",
+        "url": "https://www.linkedin.com/in/aswin-shailajan/",
         "iconSrc": "https://pic.onlinewebfonts.com/svg/img_424410.png",
         "iconAlt": "Icon"
       },
@@ -72,11 +72,11 @@
       "flipped": false
     },
     {
-      "tileName": "Rock Playlist",
+      "tileName": "My Resume",
       "content": {
         "type": "iconLink",
-        "url": "https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U",
-        "iconSrc": "https://pic.onlinewebfonts.com/svg/img_424438.png",
+        "url": "https://drive.google.com/file/d/1YpWiUwnvDSR9s5WlgOhpw4sbEFcLwg8w/view?usp=sharing",
+        "iconSrc": "https://icons.veryicon.com/png/System/Standard%20Portfolio/Resume.png",
         "iconAlt": "Icon"
       },
       "isSquare": true,
@@ -85,14 +85,14 @@
     },
     {
       "tileName": "About this site!",
-      "content": "Made with \u2764  by me, chatgpt, stackoverflow",
+      "content": "Made with \u2764  by me and my friends",
       "isSquare": true,
       "color": "#FC766AFF",
       "flipped": true
     },
     {
       "tileName": "Currently I'm",
-      "content": "Software Engineer @ Sandvine Technologies",
+      "content": "A student and always will be",
       "isSquare": true,
       "color": "#5B84B1FF",
       "flipped": true
