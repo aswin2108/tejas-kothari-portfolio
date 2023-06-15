@@ -1,6 +1,5 @@
 import { styled } from "@mui/material";
 
-
 export const Tile = styled("div")(({ isDarkMode, isAnimating }) => ({
   position: "relative",
   display: "flex",
@@ -8,7 +7,6 @@ export const Tile = styled("div")(({ isDarkMode, isAnimating }) => ({
   justifyContent: "center",
   alignItems: "center",
   backgroundColor: "var(--tile-color)",
-  padding: "10px",
   width: "var(--tile-width)",
   height: "var(--tile-height)",
   cursor: "pointer",
@@ -21,10 +19,8 @@ export const Tile = styled("div")(({ isDarkMode, isAnimating }) => ({
   animation: isAnimating ? "rotation 0.4s forwards" : "none",
   transition:
     "background-color 0.2s ease, box-shadow 0.2s ease, width 0.2s ease 0.2s, height 0.2s ease 0.2s",
-  // boxSizing: "border-box",
   padding: "2px",
-    
-    
+        
   "@keyframes rotation": {
     "0%": {
       transform: "rotateY(0deg)",
@@ -33,18 +29,18 @@ export const Tile = styled("div")(({ isDarkMode, isAnimating }) => ({
       transform: "rotateY(360deg)",
     },
   },
-  "&:hover div": {
-    textShadow: "-1px -1px 0 var(--tile-color), 1px -1px 0 var(--tile-color), -1px 1px 0 var(--tile-color), 1px 1px 0 var(--tile-color)",
-    color: isDarkMode==="dark" ? "black":"white",
-    
-    transition: "color 0.2s"
-  },
   "&:hover": {
     padding:"0px",
     textShadow: "-1px -1px 0 var(--tile-color), 1px -1px 0 var(--tile-color), -1px 1px 0 var(--tile-color), 1px 1px 0 var(--tile-color)",
     backgroundColor: isDarkMode==="dark" ? "black": "white",
     border: "2px solid var(--tile-color)",
   },
+  "&:hover div": {
+    textShadow: "-1px -1px 0 var(--tile-color), 1px -1px 0 var(--tile-color), -1px 1px 0 var(--tile-color), 1px 1px 0 var(--tile-color)",
+    color: isDarkMode==="dark" ? "black":"white",
+    
+    transition: "color 0.2s"
+  }, 
 }));
 
 export const TileName = styled("div")(({isDarkMode}) => ({

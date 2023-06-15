@@ -21,20 +21,7 @@ export const Tiles = ({
   const [isFlipped, setIsFlipped] = useState(flipped);
   const [isAnimating, setIsAnimating] = useState(false);
   const [tileSize, setTileSize] = useState(`${getRandomSize()}px`);
-
-  const tileStyle = {
-    "--tile-color": color,
-    "--text-color": isDarkMode==="dark" ? "white" : "black",
-  };
-
-  if (isSquare) {
-    tileStyle["--tile-width"] = tileSize;
-    tileStyle["--tile-height"] = tileSize;
-  } else {
-    tileStyle["--tile-width"] = "400px";
-    tileStyle["--tile-height"] = tileSize;
-  }
-
+  
   const handleClick = () => {
     setTileSize(`${getRandomSize()}px`);
     setIsAnimating(true);
@@ -71,8 +58,21 @@ export const Tiles = ({
       return <TileContent isDarkMode={isDarkMode}>{content}</TileContent>;
     }
   };
+  
   const {isDarkMode} = useContext(ThemeContext);
-  console.log(isDarkMode);
+
+  const tileStyle = {
+    "--tile-color": color,
+    "--text-color": isDarkMode==="dark" ? "white" : "black",
+  };
+  if (isSquare) {
+    tileStyle["--tile-width"] = tileSize;
+    tileStyle["--tile-height"] = tileSize;
+  } else {
+    tileStyle["--tile-width"] = "400px";
+    tileStyle["--tile-height"] = tileSize;
+  }
+
   return (
     <Tile
       style={tileStyle}
