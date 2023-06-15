@@ -60,6 +60,18 @@
       "flipped": true
     },
     {
+      "tileName": "Project 1 - Diary Chatbot App",
+      "content": {
+        "type": "iconLink",
+        "url": "https://github.com/aswin2108/BroDiary",
+        "iconSrc": "https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-performance-standards-project-management-certification_516790-1212.jpg?w=200",
+        "iconAlt": "Icon"
+      },
+      "isSquare": false,
+      "color": "gold",
+      "flipped": false
+    },
+    {
       "tileName": "LinkedIn",
       "content": {
         "type": "iconLink",
@@ -81,6 +93,18 @@
       },
       "isSquare": true,
       "color": "#1ED760",
+      "flipped": false
+    },
+    {
+      "tileName": "Project 2 - Ecommerce Store",
+      "content": {
+        "type": "iconLink",
+        "url": "https://github.com/aswin2108/TIARA-CLOTHING",
+        "iconSrc": "https://www.techrepublic.com/wp-content/uploads/2022/11/how-to-add-milestones-ora-770x514.jpeg",
+        "iconAlt": "Icon"
+      },
+      "isSquare": false,
+      "color": "#f76f63",
       "flipped": false
     },
     {

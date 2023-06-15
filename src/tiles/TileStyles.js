@@ -22,7 +22,7 @@ export const Tile = styled("div")(({ isDarkMode, isAnimating }) => ({
   transition:
     "background-color 0.2s ease, box-shadow 0.2s ease, width 0.2s ease 0.2s, height 0.2s ease 0.2s",
   // boxSizing: "border-box",
-  padding: "15px",
+  padding: "2px",
     
     
   "@keyframes rotation": {
@@ -40,6 +40,7 @@ export const Tile = styled("div")(({ isDarkMode, isAnimating }) => ({
     transition: "color 0.2s"
   },
   "&:hover": {
+    padding:"0px",
     textShadow: "-1px -1px 0 var(--tile-color), 1px -1px 0 var(--tile-color), -1px 1px 0 var(--tile-color), 1px 1px 0 var(--tile-color)",
     backgroundColor: isDarkMode==="dark" ? "black": "white",
     border: "2px solid var(--tile-color)",
@@ -73,6 +74,8 @@ export const TileContent = styled("div")(({isDarkMode}) => ({
 export const FlippedTile = styled("img")(({ isAnimating }) => ({
   height: "100%",
   width: "100%",
+  
+  borderRadius:"20px",
 }));
 
 export const IconContainer = styled("div")(({ isAnimating }) => ({
