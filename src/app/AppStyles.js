@@ -5,7 +5,6 @@ export const Portfolio = styled("div")(({ isDarkMode }) => ({
   padding: "20px",
   minHeight: "100vh",
   transition: "all 2s",
-  color: isDarkMode==="light" ? "black" : "white",
   backgroundColor: isDarkMode==="dark" ? "black" : "white",
 }));
 
@@ -41,11 +40,17 @@ export const LogoContainer = styled("img")(() => ({
   borderRadius: "5px",
 }));
 
-export const Title = styled("span")(() => ({
+export const Title = styled("span")(({isDarkMode}) => ({
   marginLeft: "20px",
   fontSize: "30px",
   fontWeight: "bold",
   cursor: "pointer",
+  transition: "background-position 2s",
+  fontFamily: "Bagel Fat One",
+  background: isDarkMode==="dark"? "linear-gradient(to right, #ff00cc, #3333ff)" : "",
+  WebkitBackgroundClip: isDarkMode === "dark" ? "text" : "",
+  WebkitTextFillColor: isDarkMode === "dark" ? "transparent" : "black",
+  color: isDarkMode==="dark"? "transparent": "black",
 }));
 
 export const ThemeIconContainer = styled("span")(() => ({
