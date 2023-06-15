@@ -17,14 +17,14 @@ export const Tiles = ({
   shuffleColors,
   flipped,
 }) => {
-  const isDarkMode = useContext(ThemeContext);
+ 
   const [isFlipped, setIsFlipped] = useState(flipped);
   const [isAnimating, setIsAnimating] = useState(false);
   const [tileSize, setTileSize] = useState(`${getRandomSize()}px`);
 
   const tileStyle = {
     "--tile-color": color,
-    "--text-color": isDarkMode ? "white" : "black",
+    "--text-color": isDarkMode==="dark" ? "white" : "black",
   };
 
   if (isSquare) {
@@ -68,18 +68,20 @@ export const Tiles = ({
         </IconContainer>
       );
     } else {
-      return <TileContent>{content}</TileContent>;
+      return <TileContent isDarkMode={isDarkMode}>{content}</TileContent>;
     }
   };
-
+  const {isDarkMode} = useContext(ThemeContext);
+  console.log(isDarkMode);
   return (
     <Tile
       style={tileStyle}
       isAnimating={isAnimating}
       tileSize={tileSize}
       onClick={handleClick}
+      isDarkMode={isDarkMode}
     >
-      <TileName>{isFlipped ? tileName : renderContent()}</TileName>
+      <TileName isDarkMode={isDarkMode}>{isFlipped ? tileName : renderContent()}</TileName>
     </Tile>
   );
 };

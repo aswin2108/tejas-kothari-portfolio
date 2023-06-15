@@ -4,28 +4,28 @@
       "tileName": "Welcome to...",
       "content": "...my portfolio!",
       "isSquare": true,
-      "color": "#603F83FF",
+      "color": "#ccd916",
       "flipped": true
     },
     {
       "tileName": "Click me!",
       "content": "Click title twice!",
       "isSquare": false,
-      "color": "#C7D3D4FF",
+      "color": "#09e9ed",
       "flipped": true
     },
     {
       "tileName": "Who am I?",
       "content": "Final year computer enthusiast",
       "isSquare": true,
-      "color": "#00539CFF",
+      "color": "#8120c7",
       "flipped": true
     },
     {
       "tileName": "Skills",
       "content": "C++, React, Firebase, Python, Java, [Postgress, MySQL](SQL)",
       "isSquare": false,
-      "color": "#EEA47FFF",
+      "color": "#f58720",
       "flipped": true
     },
     {
@@ -56,7 +56,7 @@
       "tileName": "Color Shuffle",
       "content": "Color Shuffle",
       "isSquare": true,
-      "color": "#FFFFFF",
+      "color": "#20c7a5",
       "flipped": true
     },
     {
@@ -64,11 +64,11 @@
       "content": {
         "type": "iconLink",
         "url": "https://www.linkedin.com/in/aswin-shailajan/",
-        "iconSrc": "https://pic.onlinewebfonts.com/svg/img_424410.png",
+        "iconSrc": "https://www.freepnglogos.com/uploads/linkedin-basic-round-social-logo-png-13.png",
         "iconAlt": "Icon"
       },
       "isSquare": false,
-      "color": "#0e76a8",
+      "color": "#f02be9",
       "flipped": false
     },
     {

@@ -4,9 +4,9 @@ export const Portfolio = styled("div")(({ isDarkMode }) => ({
   textAlign: "center",
   padding: "20px",
   minHeight: "100vh",
-  transition: "background-color 0.3s",
-  color: !isDarkMode ? "black" : "white",
-  backgroundColor: isDarkMode ? "black" : "white",
+  transition: "all 2s",
+  color: isDarkMode==="light" ? "black" : "white",
+  backgroundColor: isDarkMode==="dark" ? "black" : "white",
 }));
 
 export const Header = styled("div")(() => ({
@@ -54,4 +54,5 @@ export const ThemeIconContainer = styled("span")(() => ({
   height: "30px",
   width: "30px",
   cursor: "pointer",
+  transition: "all 2s",
 }));

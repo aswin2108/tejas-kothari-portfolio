@@ -15,11 +15,17 @@ import { Tiles } from "../tiles";
 import { ThemeContext } from "../ThemeContext";
 import { getTileSizes, getRandomColors } from "../utils";
 
+// export const ThemeContext = createContext(null);
+
 export const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState("light");
   const [areTilesVisible, setAreTilesVisible] = useState(true);
   const [tileColors, setTileColors] = useState([]);
   const [tileSizes, setTileSizes] = useState({});
+
+  const toggleTheme = () => {
+    setIsDarkMode((current) => (current === "light" ? "dark" : "light"));
+  };
 
   useEffect(() => {
     setTileSizes(getTileSizes());
@@ -36,15 +42,15 @@ export const App = () => {
   };
 
   return (
-    <ThemeContext.Provider value={isDarkMode}>
+    <ThemeContext.Provider value={{isDarkMode}}>
       <Portfolio isDarkMode={isDarkMode}>
         <Header>
           <TitleContainer>
             <LogoContainer src={LogoImage} alt="Logo image" />
             <Title onClick={handleTitleClick}>Aswin Shailajan <img src={HiGif} alt="Hai..!" width="30px" /></Title>
           </TitleContainer>
-          <ThemeIconContainer onClick={() => setIsDarkMode(!isDarkMode)}>
-            {isDarkMode ? <Moon color="#D3D3D3" /> : <Sun color="#E8A317" />}
+          <ThemeIconContainer onClick={toggleTheme}>
+            {isDarkMode==="dark" ? <Moon color="#D3D3D3" size={30}/> : <Sun color="#E8A317" size={30}/>}
           </ThemeIconContainer>
         </Header>
         <Content>
